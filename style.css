@@ -89,7 +89,7 @@ body {
 
 #div-container-footer {
   position: absolute;
-  bottom: 0;
+  bottom: -10;
   color: #FFF;
   width: 99%;
   height: 100px;    
