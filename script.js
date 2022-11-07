@@ -70,9 +70,15 @@ function createButtons() {
   createResetButton.id = 'clear-board';
   createResetButton.innerHTML = 'Limpar';
   takeDiv.appendChild(createResetButton);
-  const createInput = document.createElement('input');
-  createInput.id = 'board-size';
-  takeDiv.appendChild(createInput);
+  const createSelect = document.createElement('select');
+  createSelect.id = 'board-size';
+  createSelect.add(new Option('QTD Pixels', 'QTD Pixels'));
+  createSelect.add(new Option('25', '25'));
+  createSelect.add(new Option('100', '100'));
+  createSelect.add(new Option('225', '225'));
+  createSelect.add(new Option('400', '400'));
+  createSelect.add(new Option('625', '625'));
+  takeDiv.appendChild(createSelect);
   const createVQVButton = document.createElement('button');
   createVQVButton.id = 'generate-board';
   createVQVButton.innerHTML = 'VQV';
