@@ -27,7 +27,7 @@ function createDivsPallet() {
   const createDiv = document.createElement('div');
   createDiv.id = 'color-palette';
   takeSection.appendChild(createDiv);
-  for (let index = 0; index < 5; index += 1) {
+  for (let index = 0; index < 9; index += 1) {
     const takeDiv = document.querySelector('#color-palette');
     const createDivs = document.createElement('div');
     createDivs.className = 'color';
@@ -50,6 +50,10 @@ function initialColors() {
   takePallet[2].style.backgroundColor = 'blue';
   takePallet[3].style.backgroundColor = 'red';
   takePallet[4].style.backgroundColor = 'yellow';
+  takePallet[5].style.backgroundColor = 'green';
+  takePallet[6].style.backgroundColor = 'purple';
+  takePallet[7].style.backgroundColor = 'pink';
+  takePallet[8].style.backgroundColor = 'orange';
 }
 
 function createButtons() {
